@@ -1,0 +1,382 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "🖥Script Hub🖥", IntroText = "Paul's Script Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+--Tabs
+local Welcome = Window:MakeTab({
+	Name = "👋Welcome👋",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Games = Window:MakeTab({
+	Name = "Games",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Doors = Window:MakeTab({
+	Name = "Doors",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Dahood = Window:MakeTab({
+	Name = "Da Hood",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Jenga = Window:MakeTab({
+	Name = "Jenga",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Ninja = Window:MakeTab({
+	Name = "Be A Parkour Ninja",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local CW = Window:MakeWindow({
+	Name = "Combat Warriors",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+--Labels
+Welcome:AddLabel("Welcome to Paul's Script Hub! I'm very happy you picked my hub!")
+Games:AddLabel("Doors")
+Games:AddLabel("Da Hood")
+Games:AddLabel("Jenga")
+Games:AddLabel("BAPN")
+--Buttons
+Doors:AddButton({
+	Name = "AutoWalk Rooms",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/DaRealGeo/roblox/master/rooms-autowalk",true))();
+  	end    
+})
+
+Doors:AddButton({
+	Name = "Disable A-90",
+	Callback = function()
+        loadstring(game:HttpGet(('https://pastebin.com/raw/61xefTuD')))()
+  	end    
+})
+
+Doors:AddButton({
+	Name = "Crimson Hub | Key is statueandraph ",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/toosiwhip/statue/main/crimsonhub-statue.lua"))()
+  	end    
+})
+
+Doors:AddButton({
+	Name = "DarkRai X",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Doors"))()
+  	end    
+})
+
+Doors:AddButton({
+	Name = "K4x Hub",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/Kyxles/K4xHub/main/Doors/Doors.lua'))()
+  	end    
+})
+
+Doors:AddButton({
+	Name = "KING Hub",
+	Callback = function()
+		loadstring(game:HttpGet(('https://pastebin.com/raw/R8QMbhzv')))()
+  	end    
+})
+
+Doors:AddButton({
+	Name = "Neverlose.XYZ Hub",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaQLeak/neverlose.xyz/main/Doors.lua"))()
+  	end    
+})
+
+Doors:AddButton({
+	Name = "Ominoux Hub",
+	Callback = function()
+		loadstring(game:HttpGet(('https://pastebin.com/raw/9QPGnLx6'),true))()
+  	end    
+})
+
+Doors:AddButton({
+	Name = "Replicator",
+	Callback = function()
+		loadstring(game:HttpGet"https://raw.githubusercontent.com/sponguss/Doors-Entity-Replicator/main/source.lua")()
+  	end    
+})
+
+Doors:AddButton({
+	Name = "Entity Spawner",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/plamen6789/DoorsEntitySummonerGUI/main/EntityGUI'))()
+  	end    
+})
+
+Doors:AddButton({
+	Name = "Hardcore Doors",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/plamen6789/HardcoreScriptDOORS/main/HardcoreModeScript'))()
+  	end    
+})
+
+Doors:AddButton({
+	Name = "Morph GUI",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/RmdComunnityScriptsProvider/AngryHub/main/DoorsMorphScript.lua'))()
+  	end    
+})
+
+Doors:AddButton({
+	Name = "Plushy GUI",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/PaulScriptHub/Paul/main/Script%20Plushy%20GUI'))()
+  	end    
+})
+
+Doors:AddButton({
+	Name = "PoopDoors (Edited)",
+	Callback = function()
+		loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/poopdoors_edited/main/poopdoors_edited.lua"),true))()
+  	end    
+})
+
+Doors:AddButton({
+	Name = "PoopDoors",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/zoophiliaphobic/POOPDOORS/main/script.lua'))()
+  	end    
+})
+
+Doors:AddButton({
+	Name = "Revive Ur Self",
+	Callback = function()
+		game.ReplicatedStorage.EntityInfo.Revive:FireServer()
+  	end    
+})
+
+Doors:AddButton({
+	Name = "Rush Plushy",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/PaulScriptHub/Paul/main/Rush%20%20Plushy'))()
+  	end    
+})
+
+Doors:AddButton({
+	Name = "Get Scanner",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/PaulScriptHub/Paul/main/Scanner'))()
+  	end    
+})
+
+Doors:AddButton({
+	Name = "Doors Script Hub",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/UltraStuff/scripts2/main/doors"))()
+  	end    
+})
+
+Doors:AddButton({
+	Name = "Get Tablet",
+	Callback = function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/bucRxAMi'))()
+  	end    
+})
+
+Doors:AddButton({
+	Name = "Vynixius",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Loader.lua"))()
+  	end    
+})
+
+Doors:AddButton({
+	Name = "Pearl Hub",
+	Callback = function()
+		loadstring(game:HttpGet('https://ppearl.vercel.app'))()
+  	end    
+})
+
+--Buttons For Da Hood
+Dahood:AddButton({
+	Name = "GUI 1",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Zinzs/luascripting/main/canyoutellitsadahoodscriptornot.lua"))()
+  	end    
+})
+
+Dahood:AddButton({
+	Name = "Headless",
+	Callback = function()
+		loadstring(game:HttpGet("pastebin.com/raw/2ARpNFu6"))()
+  	end    
+})
+
+Dahood:AddButton({
+	Name = "Korblox",
+	Callback = function()
+		loadstring(game:HttpGet("pastebin.com/raw/PGip4d55"))()
+  	end    
+})
+
+Dahood:AddButton({
+	Name = "GUI 2",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Haihellos/skidded-enclosed-gui/main/message.txt"))()
+  	end    
+})
+
+Dahood:AddButton({
+	Name = "GUI 3",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/rogelioajax/lua/main/MangoHub"))()
+  	end    
+})
+
+Dahood:AddButton({
+	Name = "GUI 4",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/SpaceYes/Lua/Main/DaHood.Lua'))()
+  	end    
+})
+--Jenga
+Jenga:AddButton({
+	Name = "OP Script",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/MMAKINGDOM/ninajenga/main/.gitignore"))()
+  	end    
+})
+
+Jenga:AddButton({
+	Name = "Pearl Hub",
+	Callback = function()
+		loadstring(game:HttpGet('https://ppearl.vercel.app'))()
+  	end    
+})
+
+Jenga:AddButton({
+	Name = "GUI 1",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/LoopyPawss/scripts/main/Jenga.lua'))()
+  	end    
+})
+
+Jenga:AddButton({
+	Name = "GUI 2",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/MrVoz/Jenga/main/Hack"))()
+  	end    
+})
+
+Jenga:AddButton({
+	Name = "GUI 3",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/LaeraLuzy/SyctheV3/main/main.lua",true))();
+  	end    
+})
+
+Jenga:AddButton({
+	Name = "GUI 4",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/MaGiXxScripter/wheathub/main/scripts"))()
+  	end    
+})
+
+Jenga:AddButton({
+	Name = "GUI 5",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/etUQuk78"))()
+  	end    
+})
+--Buttons For Ninja
+Ninja:AddButton({
+	Name = "Blind Everyone",
+	Callback = function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/ifsyPpuE'))()
+  	end    
+})
+
+Ninja:AddButton({
+	Name = "GUI 1",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/beliveri12/BeluseHub/main/Loader.lua', true))()
+  	end    
+})
+
+Ninja:AddButton({
+	Name = "GUI 2",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/idontknowwhattonamemyself/Statue-Hub/Lua/Main"))()
+  	end    
+})
+
+Ninja:AddButton({
+	Name = "GUI 3",
+	Callback = function()
+      		loadstring(game:HttpGet('https://pastebin.com/raw/2GVCasNi'))()
+  	end    
+})
+
+Ninja:AddButton({
+	Name = "GUI 4",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/beliveri12/BeluseHub/main/Loader.lua', true))()
+  	end    
+})
+
+Ninja:AddButton({
+	Name = "GUI 5",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/ReeAndArceus/BAPN-Script/main/BAPN"))()
+  	end    
+})
+--Buttons for Combat Warriors
+CW:AddButton({
+	Name = "GUI 1",
+	Callback = function()
+      		loadstring(game:HttpGet('https://scripts.luawl.com/15004/LoaderFree.lua'))()
+  	end    
+})
+
+CW:AddButton({
+	Name = "GUI 2",
+	Callback = function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'),true))()
+  	end    
+})
+
+CW:AddButton({
+	Name = "GUI 3",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ufouzzed/CWMaxhub/main/Protected%20(15).lua"))()
+  	end    
+})
+
+CW:AddButton({
+	Name = "GUI 4",
+	Callback = function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'),true))()
+  	end    
+})
+
+CW:AddButton({
+	Name = "GUI 5",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/frkfx/Combat-Warriors/main/Script"))();
+  	end    
+})
+
+CW:AddButton({
+	Name = "GUI 6",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CheeseOnGithub/cheese-hook/main/main%20hydra%20ui.lua",true))()
+  	end    
+})
+
+OrionLib:Init()
